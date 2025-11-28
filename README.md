@@ -12,7 +12,7 @@
 1. Descargar o clonar el repositorio.
 2. Crear base de datos `ldsw_mvc` en MySQL, seleccionarla y irse a importar.
 3. Importar el archivo `database.sql` que esta en la raiz de la carpeta.
-4. En la carpeta ejecutar:
+4. En la carpeta raiz ejecutar:
    ```bash
    composer install
    
