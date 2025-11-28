@@ -135,6 +135,4 @@ writable/*
 # No subir tu configuración privada
 .env
 
-# No subir imágenes reales
-public/uploads/images/*
-!public/uploads/images/.gitkeep
+
