@@ -10,29 +10,41 @@
 ## Cómo ejecutar el proyecto
 
 1. Descargar o clonar el repositorio.
-2. Crear base de datos `ldsw_mvc` en MySQL, seleccionarla y irse a importar.
-3. Importar el archivo `database.sql` que esta en la raiz de la carpeta.
-4. En la carpeta raiz ejecutar:
-   ```bash
-   composer install
-   
-5. Configurar .env con:
-    app.baseURL = 'http://localhost/proyecto_ci/public/'
-    encryption.key = 'base64:puedes obtener una en internet o utilizar php para generarla (lo dejo abajo)'
 
-    o simplemente borrar el ".ejemplo" de ".env.ejemplo"
+2. Crear base de datos `ldsw_mvc` en MySQL, seleccionarla e irse a importar.
+
+3. Importar el archivo `database.sql` que está en la raíz de la carpeta.
+
+4. En la carpeta raíz que descargaste, ejecutar este comando en una terminal para instalar las dependencias necesarias:
+
+composer install
+
+5. Configurar .env con:
+
+    app.baseURL = 'http://localhost/proyecto_ci/public/'
+
+    encryption.key = 'base64:puedes obtener una en internet o utilizar php para generarla (lo dejo abajo)'
+
+
+
+    O simplemente borrar el ".ejemplo" de ".env.ejemplo".
+
 
 6. Iniciar XAMPP (Apache + MySQL).
+
 7. Entrar a: http://localhost/proyecto_ci/public/login
 
 8. Usuarios de prueba por si no quieres crear uno: 
- User: prueba001
- password: 12345678
 
- User: prueba002
- password: 0000
+ User: prueba001
 
-9. codigo para generar el base64 con php: php -r "echo 'base64:'.base64_encode(random_bytes(32)).PHP_EOL;"
+ password: 12345678
+
+ User: prueba002
+
+ password: 0000
+
+9. Código para generar el base64 con PHP: php -r "echo 'base64:'.base64_encode(random_bytes(32)).PHP_EOL;"
 
 ## 🧩 Descripción general
 Este proyecto es el **producto integrador final del curso**, en el cual se desarrolla una aplicación web completa de tipo **cliente/servidor** utilizando:
