@@ -120,21 +120,21 @@ _modules/*
 /api/
 
 # Visual Studio Code
-.vscode/
+# Ignorar archivos dentro de writable, excepto carpetas
+writable/*
+!writable/cache/
+!writable/logs/
+!writable/session/
+!writable/cache/.gitkeep
+!writable/logs/.gitkeep
+!writable/session/.gitkeep
 
-/results/
-/phpunit*.xml
-
+# No subir vendor
 /vendor/
-.well-known/
+
+# No subir tu configuración privada
 .env
-phpunit.xml
 
-writable/cache/
-writable/logs/
-writable/session/
-writable/debugbar/
-writable/uploads/
-
+# No subir imágenes reales
 public/uploads/images/*
 !public/uploads/images/.gitkeep
