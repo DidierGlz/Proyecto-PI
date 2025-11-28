@@ -11,40 +11,36 @@
 
 1. Descargar o clonar el repositorio.
 
-2. Crear base de datos `ldsw_mvc` en MySQL, seleccionarla e irse a importar.
+2. Crear base de datos llamada `ldsw_mvc` en MySQL (http://localhost/phpmyadmin/ usando xampp y con MySQL iniciado), seleccionarla e irse a importar.
 
 3. Importar el archivo `database.sql` que está en la raíz de la carpeta.
 
-4. En la carpeta raíz que descargaste, ejecutar este comando en una terminal para instalar las dependencias necesarias:
+4. En la carpeta raíz que descargaste (Proyecto-PI-main), click derecho, abrir terminal y ejecuta este comando para instalar las dependencias necesarias:
 
 composer install
 
-5. Configurar .env con:
+5. Configurar .env:
 
-    app.baseURL = 'http://localhost/Proyecto-PI-main/public/'
+Simplemente borrar el ".ejemplo" de ".env.ejemplo".
 
-    encryption.key = 'base64:puedes obtener una en internet o utilizar php para generarla (lo dejo abajo)'
+6. Mover la carpeta a la carpeta "htdocs" de xampp
 
+7. Iniciar XAMPP (Apache + MySQL).
 
+8. Entrar a: http://localhost/Proyecto-PI-main/public/login
 
-    O simplemente borrar el ".ejemplo" de ".env.ejemplo".
+9. Usuarios de prueba por si no quieren crear uno:
 
+ User: prueba001
 
-6. Iniciar XAMPP (Apache + MySQL).
+ password: 12345678
 
-7. Entrar a: http://localhost/Proyecto-PI-main/public/login
+ User: prueba002
 
-8. Usuarios de prueba por si no quieres crear uno: 
+ password: 0000
 
- User: prueba001
+10. Código para generar el base64 con PHP si asi lo decides: php -r "echo 'base64:'.base64_encode(random_bytes(32)).PHP_EOL;"
 
- password: 12345678
-
- User: prueba002
-
- password: 0000
-
-9. Código para generar el base64 con PHP: php -r "echo 'base64:'.base64_encode(random_bytes(32)).PHP_EOL;"
 
 ## 🧩 Descripción general
 Este proyecto es el **producto integrador final del curso**, en el cual se desarrolla una aplicación web completa de tipo **cliente/servidor** utilizando:
